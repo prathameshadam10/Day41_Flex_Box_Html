@@ -1,0 +1,69 @@
+<!doctype html>
+<title>Example</title>
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+  }
+  #main {
+    display: flex;
+    flex: 1;
+  }
+  #main > article {
+    flex: 1;
+    order: 1;
+  }
+  #main > nav, 
+  #main > aside {
+    flex: 0 0 20vw;
+  }
+  #main > nav {
+    background: #D7E8D4;
+    order: 3;
+  }
+  #main > aside {
+    background: beige;
+    order: 2;
+  }
+  header, footer {
+    background: yellowgreen;
+    height: 20vh;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+</style>
+<body>
+  <header>Header</header>
+  <div id="main">
+    <section class="mainContentItem">
+        <article>
+            <h2>First article</h2>
+            <p>Newspaper is a thing which is circulated in almost every household.
+                 In the morning when we open our doors the hawker throws a newspaper in our home.
+                  The importance of newspaper is not generated in recent years but its utility was known to the people when India was not even independent.</p>
+        </article>
+        <article>
+            <h2>Second article</h2>
+            <p>You can add these lines in your essays and paragraph writing in your exam as well as in the school competition.
+                 It will also enhance your knowledge on newspaper; 
+                 the information can be used in putting on your notice board under the topic Newspaper or can be used in the assembly discussions.</p>
+        </article>
+        <article>
+            <h2>Third article</h2>
+            <p>Newspapers played an important part in the freedom struggle as many freedom fighters started criticizing 
+                the British government and burned the lamp of independence among the people. 
+                As we know that media is the fourth pillar of democracy and newspapers play an important role 
+                in nation building and spreading awareness among the people.</p>
+        </article>
+    </section>
+    <nav>Nav</nav>
+    <aside>Aside</aside>
+  </div>
+  <footer>Footer</footer>
+</body>
